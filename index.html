@@ -96,7 +96,8 @@
 
     // Function to evalute Strings
     function evaluate(fn) {
-        return new Function('return ' + fn)();
+        return new Function('return ' + fn)(); // helper is used for maximum portability to do repeatitive tasks a bit easier.
+        //new Function() parses the JavaScript code stored in a string into a function object, which can then be called.
     }
 
     // To calculate All Input
